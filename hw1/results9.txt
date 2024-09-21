@@ -1,0 +1,376 @@
+gdemet02@node1:~$ iperf -c node0 -e -i 1 -u -b 10m
+------------------------------------------------------------
+Client connecting to node0, UDP port 5001 with pid 12962 (1 flows)
+TOS set to 0x0 (Nagle on)
+Sending 1470 byte datagrams, IPG target: 1176.00 us (kalman adjust)
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 10.10.1.2%enp65s0f0np0 port 44046 connected with 10.10.1.1 port 5001 (sock=3) on 2024-09-21 10:51:58 (MDT)
+[ ID] Interval            Transfer     Bandwidth      Write/Err  PPS
+[  1] 0.0000-1.0000 sec  1.19 MBytes  10.0 Mbits/sec  0/0      852 pps
+[  1] 1.0000-2.0000 sec  1.19 MBytes  10.0 Mbits/sec  0/0      850 pps
+[  1] 2.0000-3.0000 sec  1.19 MBytes  10.0 Mbits/sec  0/0      850 pps
+[  1] 3.0000-4.0000 sec  1.19 MBytes  10.0 Mbits/sec  0/0      850 pps
+[  1] 4.0000-5.0000 sec  1.19 MBytes  10.0 Mbits/sec  0/0      850 pps
+[  1] 5.0000-6.0000 sec  1.19 MBytes  10.0 Mbits/sec  0/0      850 pps
+[  1] 6.0000-7.0000 sec  1.19 MBytes  10.0 Mbits/sec  0/0      850 pps
+[  1] 7.0000-8.0000 sec  1.19 MBytes  10.0 Mbits/sec  0/0      850 pps
+[  1] 8.0000-9.0000 sec  1.19 MBytes  10.0 Mbits/sec  0/0      850 pps
+[  1] 9.0000-10.0000 sec  1.19 MBytes  10.0 Mbits/sec  0/0      850 pps
+[  1] 0.0000-10.0019 sec  11.9 MBytes  10.0 Mbits/sec  0/0      851 pps
+[  1] Sent 8508 datagrams
+[  1] Server Report:
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  1] 0.0000-10.0020 sec  11.9 MBytes  10.0 Mbits/sec   0.042 ms 0/8507 (0%)
+gdemet02@node1:~$ iperf -c node0 -e -i 1 -u -b 100m
+------------------------------------------------------------
+Client connecting to node0, UDP port 5001 with pid 12995 (1 flows)
+TOS set to 0x0 (Nagle on)
+Sending 1470 byte datagrams, IPG target: 117.60 us (kalman adjust)
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 10.10.1.2%enp65s0f0np0 port 39958 connected with 10.10.1.1 port 5001 (sock=3) on 2024-09-21 10:52:54 (MDT)
+[ ID] Interval            Transfer     Bandwidth      Write/Err  PPS
+[  1] 0.0000-1.0000 sec  11.9 MBytes   100 Mbits/sec  0/0     8506 pps
+[  1] 1.0000-2.0000 sec  11.9 MBytes   100 Mbits/sec  0/0     8503 pps
+[  1] 2.0000-3.0000 sec  11.9 MBytes   100 Mbits/sec  0/0     8503 pps
+[  1] 3.0000-4.0000 sec  11.9 MBytes   100 Mbits/sec  0/0     8503 pps
+[  1] 4.0000-5.0000 sec  11.9 MBytes   100 Mbits/sec  0/0     8503 pps
+[  1] 5.0000-6.0000 sec  11.9 MBytes   100 Mbits/sec  0/0     8503 pps
+[  1] 6.0000-7.0000 sec  11.9 MBytes   100 Mbits/sec  0/0     8503 pps
+[  1] 7.0000-8.0000 sec  11.9 MBytes   100 Mbits/sec  0/0     8503 pps
+[  1] 8.0000-9.0000 sec  11.9 MBytes   100 Mbits/sec  0/0     8503 pps
+[  1] 9.0000-10.0000 sec  11.9 MBytes   100 Mbits/sec  0/0     8503 pps
+[  1] 0.0000-10.0001 sec   119 MBytes   100 Mbits/sec  0/0     8504 pps
+[  1] Sent 85038 datagrams
+[  1] Server Report:
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  1] 0.0000-9.9999 sec   119 MBytes   100 Mbits/sec   0.022 ms 0/85037 (0%)
+gdemet02@node1:~$ iperf -c node0 -e -i 1 -u -b 1000m
+------------------------------------------------------------
+Client connecting to node0, UDP port 5001 with pid 13008 (1 flows)
+TOS set to 0x0 (Nagle on)
+Sending 1470 byte datagrams, IPG target: 11.76 us (kalman adjust)
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 10.10.1.2%enp65s0f0np0 port 57720 connected with 10.10.1.1 port 5001 (sock=3) on 2024-09-21 10:53:09 (MDT)
+[ ID] Interval            Transfer     Bandwidth      Write/Err  PPS
+[  1] 0.0000-1.0000 sec   119 MBytes  1000 Mbits/sec  0/0    85044 pps
+[  1] 1.0000-2.0000 sec   119 MBytes  1.00 Gbits/sec  0/0    85034 pps
+[  1] 2.0000-3.0000 sec   119 MBytes  1.00 Gbits/sec  0/0    85033 pps
+[  1] 3.0000-4.0000 sec   119 MBytes  1000 Mbits/sec  0/0    85035 pps
+[  1] 4.0000-5.0000 sec   119 MBytes  1000 Mbits/sec  0/0    85033 pps
+[  1] 5.0000-6.0000 sec   119 MBytes  1000 Mbits/sec  0/0    85034 pps
+[  1] 6.0000-7.0000 sec   119 MBytes  1.00 Gbits/sec  0/0    85034 pps
+[  1] 7.0000-8.0000 sec   119 MBytes  1000 Mbits/sec  0/0    85034 pps
+[  1] 8.0000-9.0000 sec   119 MBytes  1000 Mbits/sec  0/0    85034 pps
+[  1] 9.0000-10.0000 sec   119 MBytes  1000 Mbits/sec  0/0    85034 pps
+[  1] 0.0000-10.0001 sec  1.16 GBytes  1000 Mbits/sec  0/0    85034 pps
+[  1] Sent 850344 datagrams
+[  1] Server Report:
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  1] 0.0000-10.0000 sec  1.16 GBytes  1.00 Gbits/sec   0.012 ms 0/850343 (0%)
+gdemet02@node1:~$ iperf -c node0 -e -i 1 -u -b 10000m
+------------------------------------------------------------
+Client connecting to node0, UDP port 5001 with pid 13023 (1 flows)
+TOS set to 0x0 (Nagle on)
+Sending 1470 byte datagrams, IPG target: 1.18 us (kalman adjust)
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 10.10.1.2%enp65s0f0np0 port 50395 connected with 10.10.1.1 port 5001 (sock=3) on 2024-09-21 10:53:40 (MDT)
+[ ID] Interval            Transfer     Bandwidth      Write/Err  PPS
+[  1] 0.0000-1.0000 sec   331 MBytes  2.78 Gbits/sec  0/0   236217 pps
+[  1] 1.0000-2.0000 sec   331 MBytes  2.78 Gbits/sec  0/0   236260 pps
+[  1] 2.0000-3.0000 sec   332 MBytes  2.79 Gbits/sec  0/0   236877 pps
+[  1] 3.0000-4.0000 sec   331 MBytes  2.78 Gbits/sec  0/0   236205 pps
+[  1] 4.0000-5.0000 sec   331 MBytes  2.78 Gbits/sec  0/0   236290 pps
+[  1] 5.0000-6.0000 sec   336 MBytes  2.82 Gbits/sec  0/0   239867 pps
+[  1] 6.0000-7.0000 sec   336 MBytes  2.82 Gbits/sec  0/0   239619 pps
+[  1] 7.0000-8.0000 sec   336 MBytes  2.82 Gbits/sec  0/0   239389 pps
+[  1] 8.0000-9.0000 sec   336 MBytes  2.82 Gbits/sec  0/0   239735 pps
+[  1] 9.0000-10.0000 sec   336 MBytes  2.82 Gbits/sec  0/0   239617 pps
+[  1] 0.0000-10.0000 sec  3.26 GBytes  2.80 Gbits/sec  0/0   238008 pps
+[  1] Sent 2380080 datagrams
+[  1] Server Report:
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  1] 0.0000-10.0000 sec  3.26 GBytes  2.80 Gbits/sec   0.005 ms 0/2380079 (0%)
+gdemet02@node1:~$ iperf -c node0 -e -i 1 -u -b 100000m
+------------------------------------------------------------
+Client connecting to node0, UDP port 5001 with pid 13036 (1 flows)
+TOS set to 0x0 (Nagle on)
+Sending 1470 byte datagrams, IPG target: 0.12 us (kalman adjust)
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 10.10.1.2%enp65s0f0np0 port 49761 connected with 10.10.1.1 port 5001 (sock=3) on 2024-09-21 10:53:56 (MDT)
+[ ID] Interval            Transfer     Bandwidth      Write/Err  PPS
+[  1] 0.0000-1.0000 sec   375 MBytes  3.15 Gbits/sec  0/0   267436 pps
+[  1] 1.0000-2.0000 sec   374 MBytes  3.14 Gbits/sec  0/0   267120 pps
+[  1] 2.0000-3.0000 sec   374 MBytes  3.14 Gbits/sec  0/0   267120 pps
+[  1] 3.0000-4.0000 sec   374 MBytes  3.14 Gbits/sec  0/0   267119 pps
+[  1] 4.0000-5.0000 sec   375 MBytes  3.15 Gbits/sec  0/0   267633 pps
+[  1] 5.0000-6.0000 sec   375 MBytes  3.15 Gbits/sec  0/0   267650 pps
+[  1] 6.0000-7.0000 sec   375 MBytes  3.14 Gbits/sec  0/0   267316 pps
+[  1] 7.0000-8.0000 sec   375 MBytes  3.15 Gbits/sec  0/0   267733 pps
+[  1] 8.0000-9.0000 sec   375 MBytes  3.15 Gbits/sec  0/0   267564 pps
+[  1] 9.0000-10.0000 sec   375 MBytes  3.14 Gbits/sec  0/0   267388 pps
+[  1] 0.0000-10.0000 sec  3.66 GBytes  3.14 Gbits/sec  0/0   267408 pps
+[  1] Sent 2674081 datagrams
+[  1] Server Report:
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  1] 0.0000-9.9998 sec  3.66 GBytes  3.14 Gbits/sec   0.005 ms 98/2674080 (0.0037%)
+gdemet02@node1:~$ iperf -c node0 -e -i 1 -u -b 1000000m
+------------------------------------------------------------
+Client connecting to node0, UDP port 5001 with pid 13051 (1 flows)
+TOS set to 0x0 (Nagle on)
+Sending 1470 byte datagrams, IPG target: 0.01 us (kalman adjust)
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 10.10.1.2%enp65s0f0np0 port 45130 connected with 10.10.1.1 port 5001 (sock=3) on 2024-09-21 10:54:14 (MDT)
+[ ID] Interval            Transfer     Bandwidth      Write/Err  PPS
+[  1] 0.0000-1.0000 sec   324 MBytes  2.72 Gbits/sec  0/0   231133 pps
+[  1] 1.0000-2.0000 sec   323 MBytes  2.71 Gbits/sec  0/0   230552 pps
+[  1] 2.0000-3.0000 sec   322 MBytes  2.70 Gbits/sec  0/0   229600 pps
+[  1] 3.0000-4.0000 sec   322 MBytes  2.70 Gbits/sec  0/0   229625 pps
+[  1] 4.0000-5.0000 sec   317 MBytes  2.66 Gbits/sec  0/0   225788 pps
+[  1] 5.0000-6.0000 sec   317 MBytes  2.66 Gbits/sec  0/0   226249 pps
+[  1] 6.0000-7.0000 sec   317 MBytes  2.66 Gbits/sec  0/0   226005 pps
+[  1] 7.0000-8.0000 sec   316 MBytes  2.65 Gbits/sec  0/0   225056 pps
+[  1] 8.0000-9.0000 sec   317 MBytes  2.66 Gbits/sec  0/0   226061 pps
+[  1] 9.0000-10.0000 sec   320 MBytes  2.69 Gbits/sec  0/0   228596 pps
+[  1] 0.0000-10.0000 sec  3.12 GBytes  2.68 Gbits/sec  0/0   227867 pps
+[  1] Sent 2278669 datagrams
+[  1] Server Report:
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  1] 0.0000-9.9999 sec  3.12 GBytes  2.68 Gbits/sec   0.004 ms 40/2278668 (0.0018%)
+gdemet02@node1:~$ iperf -c node0 -e -i 1 -u -b 10000000m
+------------------------------------------------------------
+Client connecting to node0, UDP port 5001 with pid 13062 (1 flows)
+TOS set to 0x0 (Nagle on)
+Sending 1470 byte datagrams, IPG target: 0.00 us (kalman adjust)
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 10.10.1.2%enp65s0f0np0 port 56230 connected with 10.10.1.1 port 5001 (sock=3) on 2024-09-21 10:54:32 (MDT)
+[ ID] Interval            Transfer     Bandwidth      Write/Err  PPS
+[  1] 0.0000-1.0000 sec   332 MBytes  2.79 Gbits/sec  0/0   236929 pps
+[  1] 1.0000-2.0000 sec   333 MBytes  2.79 Gbits/sec  0/0   237327 pps
+[  1] 2.0000-3.0000 sec   333 MBytes  2.79 Gbits/sec  0/0   237356 pps
+[  1] 3.0000-4.0000 sec   332 MBytes  2.79 Gbits/sec  0/0   236996 pps
+[  1] 4.0000-5.0000 sec   332 MBytes  2.79 Gbits/sec  0/0   237019 pps
+[  1] 5.0000-6.0000 sec   332 MBytes  2.78 Gbits/sec  0/0   236787 pps
+[  1] 6.0000-7.0000 sec   332 MBytes  2.78 Gbits/sec  0/0   236584 pps
+[  1] 7.0000-8.0000 sec   331 MBytes  2.78 Gbits/sec  0/0   236064 pps
+[  1] 8.0000-9.0000 sec   332 MBytes  2.78 Gbits/sec  0/0   236551 pps
+[  1] 9.0000-10.0000 sec   332 MBytes  2.79 Gbits/sec  0/0   236857 pps
+[  1] 0.0000-10.0000 sec  3.24 GBytes  2.79 Gbits/sec  0/0   236847 pps
+[  1] Sent 2368473 datagrams
+[  1] Server Report:
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  1] 0.0000-9.9998 sec  3.24 GBytes  2.79 Gbits/sec   0.006 ms 32/2368472 (0.0014%)
+gdemet02@node1:~$ iperf -c node0 -e -i 1 -u -b 100000000m
+------------------------------------------------------------
+Client connecting to node0, UDP port 5001 with pid 13075 (1 flows)
+TOS set to 0x0 (Nagle on)
+Sending 1470 byte datagrams, IPG target: 0.00 us (kalman adjust)
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 10.10.1.2%enp65s0f0np0 port 46732 connected with 10.10.1.1 port 5001 (sock=3) on 2024-09-21 10:54:55 (MDT)
+[ ID] Interval            Transfer     Bandwidth      Write/Err  PPS
+[  1] 0.0000-1.0000 sec   319 MBytes  2.68 Gbits/sec  0/0   227617 pps
+[  1] 1.0000-2.0000 sec   319 MBytes  2.68 Gbits/sec  0/0   227628 pps
+[  1] 2.0000-3.0000 sec   318 MBytes  2.67 Gbits/sec  0/0   226682 pps
+[  1] 3.0000-4.0000 sec   315 MBytes  2.64 Gbits/sec  0/0   224719 pps
+[  1] 4.0000-5.0000 sec   314 MBytes  2.64 Gbits/sec  0/0   224212 pps
+[  1] 5.0000-6.0000 sec   319 MBytes  2.68 Gbits/sec  0/0   227742 pps
+[  1] 6.0000-7.0000 sec   320 MBytes  2.68 Gbits/sec  0/0   228102 pps
+[  1] 7.0000-8.0000 sec   320 MBytes  2.69 Gbits/sec  0/0   228317 pps
+[  1] 8.0000-9.0000 sec   324 MBytes  2.72 Gbits/sec  0/0   231273 pps
+[  1] 9.0000-10.0000 sec   325 MBytes  2.73 Gbits/sec  0/0   231894 pps
+[  1] 0.0000-10.0000 sec  3.12 GBytes  2.68 Gbits/sec  0/0   227819 pps
+[  1] Sent 2278188 datagrams
+[  1] Server Report:
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  1] 0.0000-9.9999 sec  3.12 GBytes  2.68 Gbits/sec   0.005 ms 0/2278187 (0%)
+gdemet02@node1:~$ iperf -c node0 -e -i 1 -u -b 1000000000m
+------------------------------------------------------------
+Client connecting to node0, UDP port 5001 with pid 13096 (1 flows)
+TOS set to 0x0 (Nagle on)
+Sending 1470 byte datagrams, IPG target: 0.00 us (kalman adjust)
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 10.10.1.2%enp65s0f0np0 port 45247 connected with 10.10.1.1 port 5001 (sock=3) on 2024-09-21 10:55:18 (MDT)
+[ ID] Interval            Transfer     Bandwidth      Write/Err  PPS
+[  1] 0.0000-1.0000 sec   330 MBytes  2.77 Gbits/sec  0/0   235245 pps
+[  1] 1.0000-2.0000 sec   330 MBytes  2.76 Gbits/sec  0/0   235064 pps
+[  1] 2.0000-3.0000 sec   329 MBytes  2.76 Gbits/sec  0/0   234837 pps
+[  1] 3.0000-4.0000 sec   329 MBytes  2.76 Gbits/sec  0/0   234767 pps
+[  1] 4.0000-5.0000 sec   329 MBytes  2.76 Gbits/sec  0/0   234710 pps
+[  1] 5.0000-6.0000 sec   329 MBytes  2.76 Gbits/sec  0/0   234907 pps
+[  1] 6.0000-7.0000 sec   329 MBytes  2.76 Gbits/sec  0/0   234507 pps
+[  1] 7.0000-8.0000 sec   329 MBytes  2.76 Gbits/sec  0/0   234759 pps
+[  1] 8.0000-9.0000 sec   329 MBytes  2.76 Gbits/sec  0/0   234473 pps
+[  1] 9.0000-10.0000 sec   329 MBytes  2.76 Gbits/sec  0/0   234469 pps
+[  1] 0.0000-10.0000 sec  3.21 GBytes  2.76 Gbits/sec  0/0   234774 pps
+[  1] Sent 2347741 datagrams
+[  1] Server Report:
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  1] 0.0000-10.0000 sec  3.21 GBytes  2.76 Gbits/sec   0.004 ms 46/2347740 (0.002%)
+gdemet02@node1:~$ iperf -c node0 -e -i 1 -u -b 10000000000m
+------------------------------------------------------------
+Client connecting to node0, UDP port 5001 with pid 13117 (1 flows)
+TOS set to 0x0 (Nagle on)
+Sending 1470 byte datagrams, IPG target: 0.00 us (kalman adjust)
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 10.10.1.2%enp65s0f0np0 port 48383 connected with 10.10.1.1 port 5001 (sock=3) on 2024-09-21 10:55:54 (MDT)
+[ ID] Interval            Transfer     Bandwidth      Write/Err  PPS
+[  1] 0.0000-1.0000 sec   325 MBytes  2.73 Gbits/sec  0/0   231775 pps
+[  1] 1.0000-2.0000 sec   324 MBytes  2.72 Gbits/sec  0/0   231068 pps
+[  1] 2.0000-3.0000 sec   323 MBytes  2.71 Gbits/sec  0/0   230745 pps
+[  1] 3.0000-4.0000 sec   323 MBytes  2.71 Gbits/sec  0/0   230666 pps
+[  1] 4.0000-5.0000 sec   323 MBytes  2.71 Gbits/sec  0/0   230555 pps
+[  1] 5.0000-6.0000 sec   327 MBytes  2.75 Gbits/sec  0/0   233419 pps
+[  1] 6.0000-7.0000 sec   328 MBytes  2.75 Gbits/sec  0/0   233889 pps
+[  1] 7.0000-8.0000 sec   327 MBytes  2.74 Gbits/sec  0/0   233346 pps
+[  1] 8.0000-9.0000 sec   327 MBytes  2.74 Gbits/sec  0/0   233403 pps
+[  1] 9.0000-10.0000 sec   328 MBytes  2.75 Gbits/sec  0/0   233720 pps
+[  1] 0.0000-10.0000 sec  3.18 GBytes  2.73 Gbits/sec  0/0   232259 pps
+[  1] Sent 2322589 datagrams
+[  1] Server Report:
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  1] 0.0000-10.0000 sec  3.18 GBytes  2.73 Gbits/sec   0.004 ms 50/2322588 (0.0022%)
+
+
+------------------------------------------------------------
+Server listening on UDP port 5001
+UDP buffer size:  416 KByte (WARNING: requested 4.00 MByte)
+------------------------------------------------------------
+[  1] local 10.10.1.1 port 5001 connected with 10.10.1.2 port 44046
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  1] 0.0000-1.0000 sec  1.19 MBytes  10.0 Mbits/sec   0.043 ms 0/852 (0%)
+[  1] 1.0000-2.0000 sec  1.19 MBytes  10.0 Mbits/sec   0.039 ms 0/850 (0%)
+[  1] 2.0000-3.0000 sec  1.19 MBytes  10.0 Mbits/sec   0.033 ms 0/851 (0%)
+[  1] 3.0000-4.0000 sec  1.19 MBytes  10.0 Mbits/sec   0.040 ms 0/850 (0%)
+[  1] 4.0000-5.0000 sec  1.19 MBytes  10.0 Mbits/sec   0.037 ms 0/850 (0%)
+[  1] 5.0000-6.0000 sec  1.19 MBytes  10.0 Mbits/sec   0.040 ms 0/851 (0%)
+[  1] 6.0000-7.0000 sec  1.19 MBytes  10.0 Mbits/sec   0.042 ms 0/850 (0%)
+[  1] 7.0000-8.0000 sec  1.19 MBytes  10.0 Mbits/sec   0.035 ms 0/850 (0%)
+[  1] 8.0000-9.0000 sec  1.19 MBytes  10.0 Mbits/sec   0.038 ms 0/851 (0%)
+[  1] 9.0000-10.0000 sec  1.19 MBytes  10.0 Mbits/sec   0.047 ms 0/850 (0%)
+[  1] 0.0000-10.0020 sec  11.9 MBytes  10.0 Mbits/sec   0.042 ms 0/8507 (0%)
+[  2] local 10.10.1.1 port 5001 connected with 10.10.1.2 port 39958
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  2] 0.0000-1.0000 sec  11.9 MBytes   100 Mbits/sec   0.022 ms 0/8506 (0%)
+[  2] 1.0000-2.0000 sec  11.9 MBytes   100 Mbits/sec   0.016 ms 0/8503 (0%)
+[  2] 2.0000-3.0000 sec  11.9 MBytes   100 Mbits/sec   0.023 ms 0/8504 (0%)
+[  2] 3.0000-4.0000 sec  11.9 MBytes   100 Mbits/sec   0.021 ms 0/8503 (0%)
+[  2] 4.0000-5.0000 sec  11.9 MBytes   100 Mbits/sec   0.023 ms 0/8504 (0%)
+[  2] 5.0000-6.0000 sec  11.9 MBytes   100 Mbits/sec   0.012 ms 0/8503 (0%)
+[  2] 6.0000-7.0000 sec  11.9 MBytes   100 Mbits/sec   0.023 ms 0/8503 (0%)
+[  2] 7.0000-8.0000 sec  11.9 MBytes   100 Mbits/sec   0.019 ms 0/8504 (0%)
+[  2] 8.0000-9.0000 sec  11.9 MBytes   100 Mbits/sec   0.023 ms 0/8503 (0%)
+[  2] 9.0000-9.9999 sec  11.9 MBytes   100 Mbits/sec   0.022 ms 0/8504 (0%)
+[  2] 0.0000-9.9999 sec   119 MBytes   100 Mbits/sec   0.022 ms 0/85037 (0%)
+[  3] local 10.10.1.1 port 5001 connected with 10.10.1.2 port 57720
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  3] 0.0000-1.0000 sec   119 MBytes  1.00 Gbits/sec   0.009 ms 0/85048 (0%)
+[  3] 1.0000-2.0000 sec   119 MBytes  1000 Mbits/sec   0.011 ms 0/85023 (0%)
+[  3] 2.0000-3.0000 sec   119 MBytes  1.00 Gbits/sec   0.009 ms 0/85041 (0%)
+[  3] 3.0000-4.0000 sec   119 MBytes  1000 Mbits/sec   0.008 ms 0/85033 (0%)
+[  3] 4.0000-5.0000 sec   119 MBytes  1.00 Gbits/sec   0.008 ms 0/85035 (0%)
+[  3] 5.0000-6.0000 sec   119 MBytes  1000 Mbits/sec   0.013 ms 0/85030 (0%)
+[  3] 6.0000-7.0000 sec   119 MBytes  1.00 Gbits/sec   0.009 ms 0/85038 (0%)
+[  3] 7.0000-8.0000 sec   119 MBytes  1000 Mbits/sec   0.008 ms 0/85032 (0%)
+[  3] 8.0000-9.0000 sec   119 MBytes  1000 Mbits/sec   0.011 ms 0/85033 (0%)
+[  3] 9.0000-10.0000 sec   119 MBytes  1000 Mbits/sec   0.012 ms 0/85030 (0%)
+[  3] 0.0000-10.0000 sec  1.16 GBytes  1.00 Gbits/sec   0.012 ms 0/850343 (0%)
+[  4] local 10.10.1.1 port 5001 connected with 10.10.1.2 port 50395
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  4] 0.0000-1.0000 sec   331 MBytes  2.78 Gbits/sec   0.004 ms 0/236197 (0%)
+[  4] 1.0000-2.0000 sec   331 MBytes  2.78 Gbits/sec   0.005 ms 0/236264 (0%)
+[  4] 2.0000-3.0000 sec   332 MBytes  2.79 Gbits/sec   0.005 ms 0/236889 (0%)
+[  4] 3.0000-4.0000 sec   331 MBytes  2.78 Gbits/sec   0.005 ms 0/236199 (0%)
+[  4] 4.0000-5.0000 sec   331 MBytes  2.78 Gbits/sec   0.005 ms 0/236294 (0%)
+[  4] 5.0000-6.0000 sec   336 MBytes  2.82 Gbits/sec   0.005 ms 0/239923 (0%)
+[  4] 6.0000-7.0000 sec   336 MBytes  2.82 Gbits/sec   0.005 ms 0/239550 (0%)
+[  4] 7.0000-8.0000 sec   336 MBytes  2.81 Gbits/sec   0.004 ms 0/239369 (0%)
+[  4] 8.0000-9.0000 sec   336 MBytes  2.82 Gbits/sec   0.005 ms 0/239777 (0%)
+[  4] 9.0000-10.0000 sec   336 MBytes  2.82 Gbits/sec   0.005 ms 0/239617 (0%)
+[  4] 0.0000-10.0000 sec  3.26 GBytes  2.80 Gbits/sec   0.005 ms 0/2380079 (0%)
+[  5] local 10.10.1.1 port 5001 connected with 10.10.1.2 port 49761
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  5] 0.0000-1.0000 sec   375 MBytes  3.14 Gbits/sec   0.005 ms 98/267399 (0.037%)
+[  5] 1.0000-2.0000 sec   374 MBytes  3.14 Gbits/sec   0.015 ms 0/267100 (0%)
+[  5] 2.0000-3.0000 sec   375 MBytes  3.14 Gbits/sec   0.004 ms 0/267151 (0%)
+[  5] 3.0000-4.0000 sec   375 MBytes  3.14 Gbits/sec   0.004 ms 0/267183 (0%)
+[  5] 4.0000-5.0000 sec   375 MBytes  3.15 Gbits/sec   0.004 ms 0/267587 (0%)
+[  5] 5.0000-6.0000 sec   375 MBytes  3.15 Gbits/sec   0.004 ms 0/267667 (0%)
+[  5] 6.0000-7.0000 sec   375 MBytes  3.14 Gbits/sec   0.005 ms 0/267282 (0%)
+[  5] 7.0000-8.0000 sec   375 MBytes  3.15 Gbits/sec   0.004 ms 0/267730 (0%)
+[  5] 8.0000-9.0000 sec   375 MBytes  3.15 Gbits/sec   0.006 ms 0/267552 (0%)
+[  5] 9.0000-9.9998 sec   375 MBytes  3.15 Gbits/sec   0.005 ms 0/267429 (0%)
+[  5] 0.0000-9.9998 sec  3.66 GBytes  3.14 Gbits/sec   0.005 ms 98/2674080 (0.0037%)
+[  6] local 10.10.1.1 port 5001 connected with 10.10.1.2 port 45130
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  6] 0.0000-1.0000 sec   324 MBytes  2.72 Gbits/sec   0.005 ms 40/231175 (0.017%)
+[  6] 1.0000-2.0000 sec   323 MBytes  2.71 Gbits/sec   0.005 ms 0/230554 (0%)
+[  6] 2.0000-3.0000 sec   322 MBytes  2.70 Gbits/sec   0.005 ms 0/229569 (0%)
+[  6] 3.0000-4.0000 sec   322 MBytes  2.70 Gbits/sec   0.005 ms 0/229629 (0%)
+[  6] 4.0000-5.0000 sec   316 MBytes  2.65 Gbits/sec   0.013 ms 0/225709 (0%)
+[  6] 5.0000-6.0000 sec   317 MBytes  2.66 Gbits/sec   0.005 ms 0/226324 (0%)
+[  6] 6.0000-7.0000 sec   317 MBytes  2.66 Gbits/sec   0.005 ms 0/226010 (0%)
+[  6] 7.0000-8.0000 sec   316 MBytes  2.65 Gbits/sec   0.005 ms 0/225068 (0%)
+[  6] 8.0000-9.0000 sec   317 MBytes  2.66 Gbits/sec   0.005 ms 0/226049 (0%)
+[  6] 9.0000-9.9999 sec   320 MBytes  2.69 Gbits/sec   0.005 ms 0/228581 (0%)
+[  6] 0.0000-9.9999 sec  3.12 GBytes  2.68 Gbits/sec   0.005 ms 40/2278668 (0.0018%)
+[  7] local 10.10.1.1 port 5001 connected with 10.10.1.2 port 56230
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  7] 0.0000-1.0000 sec   332 MBytes  2.79 Gbits/sec   0.005 ms 32/236962 (0.014%)
+[  7] 1.0000-2.0000 sec   333 MBytes  2.79 Gbits/sec   0.005 ms 0/237305 (0%)
+[  7] 2.0000-3.0000 sec   333 MBytes  2.79 Gbits/sec   0.005 ms 0/237316 (0%)
+[  7] 3.0000-4.0000 sec   332 MBytes  2.79 Gbits/sec   0.004 ms 0/236961 (0%)
+[  7] 4.0000-5.0000 sec   332 MBytes  2.79 Gbits/sec   0.005 ms 0/237099 (0%)
+[  7] 5.0000-6.0000 sec   332 MBytes  2.78 Gbits/sec   0.005 ms 0/236710 (0%)
+[  7] 6.0000-7.0000 sec   332 MBytes  2.78 Gbits/sec   0.005 ms 0/236574 (0%)
+[  7] 7.0000-8.0000 sec   331 MBytes  2.78 Gbits/sec   0.004 ms 0/236165 (0%)
+[  7] 8.0000-9.0000 sec   331 MBytes  2.78 Gbits/sec   0.026 ms 0/236453 (0%)
+[  7] 9.0000-9.9998 sec   332 MBytes  2.79 Gbits/sec   0.007 ms 0/236927 (0%)
+[  7] 0.0000-9.9998 sec  3.24 GBytes  2.79 Gbits/sec   0.007 ms 32/2368472 (0.0014%)
+[  8] local 10.10.1.1 port 5001 connected with 10.10.1.2 port 46732
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  8] 0.0000-1.0000 sec   319 MBytes  2.68 Gbits/sec   0.005 ms 0/227639 (0%)
+[  8] 1.0000-2.0000 sec   319 MBytes  2.68 Gbits/sec   0.005 ms 0/227544 (0%)
+[  8] 2.0000-3.0000 sec   318 MBytes  2.67 Gbits/sec   0.005 ms 0/226695 (0%)
+[  8] 3.0000-4.0000 sec   315 MBytes  2.64 Gbits/sec   0.005 ms 0/224699 (0%)
+[  8] 4.0000-5.0000 sec   314 MBytes  2.64 Gbits/sec   0.005 ms 0/224266 (0%)
+[  8] 5.0000-6.0000 sec   319 MBytes  2.68 Gbits/sec   0.006 ms 0/227715 (0%)
+[  8] 6.0000-7.0000 sec   320 MBytes  2.68 Gbits/sec   0.006 ms 0/228102 (0%)
+[  8] 7.0000-8.0000 sec   320 MBytes  2.68 Gbits/sec   0.012 ms 0/228301 (0%)
+[  8] 8.0000-9.0000 sec   324 MBytes  2.72 Gbits/sec   0.007 ms 0/231288 (0%)
+[  8] 9.0000-9.9999 sec   325 MBytes  2.73 Gbits/sec   0.005 ms 0/231938 (0%)
+[  8] 0.0000-9.9999 sec  3.12 GBytes  2.68 Gbits/sec   0.005 ms 0/2278187 (0%)
+[  9] local 10.10.1.1 port 5001 connected with 10.10.1.2 port 45247
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  9] 0.0000-1.0000 sec   330 MBytes  2.77 Gbits/sec   0.005 ms 0/235162 (0%)
+[  9] 1.0000-2.0000 sec   330 MBytes  2.76 Gbits/sec   0.008 ms 0/235064 (0%)
+[  9] 2.0000-3.0000 sec   329 MBytes  2.76 Gbits/sec   0.005 ms 0/234866 (0%)
+[  9] 3.0000-4.0000 sec   329 MBytes  2.76 Gbits/sec   0.005 ms 0/234716 (0%)
+[  9] 4.0000-5.0000 sec   329 MBytes  2.76 Gbits/sec   0.005 ms 0/234761 (0%)
+[  9] 5.0000-6.0000 sec   329 MBytes  2.76 Gbits/sec   0.005 ms 0/234980 (0%)
+[  9] 6.0000-7.0000 sec   329 MBytes  2.76 Gbits/sec   0.005 ms 46/234422 (0.02%)
+[  9] 7.0000-8.0000 sec   329 MBytes  2.76 Gbits/sec   0.005 ms 0/234808 (0%)
+[  9] 8.0000-9.0000 sec   329 MBytes  2.76 Gbits/sec   0.007 ms 0/234407 (0%)
+[  9] 9.0000-10.0000 sec   329 MBytes  2.76 Gbits/sec   0.005 ms 0/234532 (0%)
+[  9] 0.0000-10.0000 sec  3.21 GBytes  2.76 Gbits/sec   0.005 ms 46/2347740 (0.002%)
+[ 10] local 10.10.1.1 port 5001 connected with 10.10.1.2 port 48383
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[ 10] 0.0000-1.0000 sec   325 MBytes  2.73 Gbits/sec   0.005 ms 50/231800 (0.022%)
+[ 10] 1.0000-2.0000 sec   324 MBytes  2.72 Gbits/sec   0.005 ms 0/231057 (0%)
+[ 10] 2.0000-3.0000 sec   323 MBytes  2.71 Gbits/sec   0.005 ms 0/230674 (0%)
+[ 10] 3.0000-4.0000 sec   324 MBytes  2.71 Gbits/sec   0.005 ms 0/230770 (0%)
+[ 10] 4.0000-5.0000 sec   323 MBytes  2.71 Gbits/sec   0.005 ms 0/230450 (0%)
+[ 10] 5.0000-6.0000 sec   327 MBytes  2.75 Gbits/sec   0.005 ms 0/233467 (0%)
+[ 10] 6.0000-7.0000 sec   328 MBytes  2.75 Gbits/sec   0.005 ms 0/233945 (0%)
+[ 10] 7.0000-8.0000 sec   327 MBytes  2.74 Gbits/sec   0.005 ms 0/233296 (0%)
+[ 10] 8.0000-9.0000 sec   327 MBytes  2.74 Gbits/sec   0.006 ms 0/233369 (0%)
+[ 10] 9.0000-10.0000 sec   328 MBytes  2.75 Gbits/sec   0.005 ms 0/233760 (0%)
+[ 10] 0.0000-10.0000 sec  3.18 GBytes  2.73 Gbits/sec   0.005 ms 50/2322588 (0.0022%
