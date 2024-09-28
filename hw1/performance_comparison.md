@@ -1,6 +1,9 @@
 
 # Performance Comparison
 
+![Chart](/pictures/chart)
+![Table](/pictures/table)
+
 1. **Latency (us)**
    - Local DRAM has the lowest latency (0.1122 us), making it the fastest in terms of access speed.
    - Rack DRAM has relatively higher latency (240.1122 us) compared to Local DRAM, but it’s still faster than Local Disk and Rack Disk.
