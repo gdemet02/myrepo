@@ -1,8 +1,8 @@
 
 # Performance Comparison
 
-![Chart](/pictures/chart)
-![Table](/pictures/table)
+![Chart](./pictures/chart)
+![Table](./pictures/table)
 
 1. **Latency (us)**
    - Local DRAM has the lowest latency (0.1122 us), making it the fastest in terms of access speed.
